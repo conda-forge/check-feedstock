@@ -5,7 +5,7 @@ Home: http://libcheck.github.io/check/
 
 Package license: LGPL-2.1+
 
-Feedstock license: BSD
+Feedstock license: BSD 3-Clause
 
 Summary: Unit testing framework for C
 
@@ -69,6 +69,7 @@ Terminology
 
 Current build status
 ====================
+
 Linux: [![Circle CI](https://circleci.com/gh/conda-forge/check-feedstock.svg?style=svg)](https://circleci.com/gh/conda-forge/check-feedstock)
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/check-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/check-feedstock) 
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/check-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/check-feedstock/branch/master)
