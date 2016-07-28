@@ -5,11 +5,12 @@ package:
     version: {{ version }}
 
 source:
-    git_url: https://github.com/libcheck/check.git
-    git_tag: {{ version }}
+    fn: check-{{ version }}.tar.gz
+    url: https://github.com/libcheck/check/releases/download/{{ version }}/check-{{ version }}.tar.gz
+    sha256: f5f50766aa6f8fe5a2df752666ca01a950add45079aa06416b83765b1cf71052
 
 build:
-    number: 0
+    number: 1
     skip: True  # [win]
 
 requirements:
@@ -18,18 +19,16 @@ requirements:
         - libtool
         - pkg-config
         - texinfo
-    run:
-        - libgcc
 
 test:
     commands:
         - checkmk --version
-        - conda inspect linkages check --name _test  # [linux]
+        - conda inspect linkages check --name _test  # [not win]
 
 about:
     home: http://libcheck.github.io/check/
-    license: LGPL-2.1+
-    summary: Unit testing framework for C
+    license: LGPL-2.1
+    summary: 'Unit testing framework for C.'
 
 extra:
     recipe-maintainers:
