@@ -5,7 +5,6 @@ package:
   version: {{ version }}
 
 source:
-  fn: check-{{ version }}.tar.gz
   url: https://github.com/libcheck/check/releases/download/{{ version }}/check-{{ version }}.tar.gz
   sha256: 464201098bee00e90f5c4bdfa94a5d3ead8d641f9025b560a27755a83b824234
 
@@ -23,8 +22,8 @@ requirements:
 test:
   commands:
     - checkmk --version
-    #- conda inspect linkages -p $PREFIX check  # [not win]
-    #- conda inspect objects -p $PREFIX check  # [osx]
+    - conda inspect linkages -p $PREFIX $PKG_NAME  # [not win]
+    - conda inspect objects -p $PREFIX $PKG_NAME  # [osx]
 
 about:
   home: http://libcheck.github.io/check/
