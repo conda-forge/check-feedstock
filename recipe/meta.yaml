@@ -9,7 +9,7 @@ source:
   sha256: 464201098bee00e90f5c4bdfa94a5d3ead8d641f9025b560a27755a83b824234
 
 build:
-  number: 0
+  number: 1
   skip: True  # [win]
 
 requirements:
@@ -28,7 +28,7 @@ test:
 about:
   home: http://libcheck.github.io/check/
   license: LGPL-2.1
-  summary: 'Unit testing framework for C.'
+  summary: 'Unit testing framework for C'
 
 extra:
   recipe-maintainers:
