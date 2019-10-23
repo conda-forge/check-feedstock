@@ -24,12 +24,11 @@ requirements:
 test:
   commands:
     - checkmk --version
-    - conda inspect linkages -p $PREFIX $PKG_NAME  # [not win]
-    - conda inspect objects -p $PREFIX $PKG_NAME  # [osx]
 
 about:
   home: http://libcheck.github.io/check/
   license: LGPL-2.1
+  license_file: COPYING.LESSER
   summary: 'Unit testing framework for C'
 
 extra:
