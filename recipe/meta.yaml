@@ -1,4 +1,4 @@
-{% set version = "0.13.0" %}
+{% set version = "0.14.0" %}
 
 package:
   name: check
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/libcheck/check/releases/download/{{ version }}/check-{{ version }}.tar.gz
-  sha256: c4336b31447acc7e3266854f73ec188cdb15554d0edd44739631da174a569909
+  sha256: bd0f0ca1be65b70238b32f8e9fe5d36dc2fbf7a759b7edf28e75323a7d74f30b
 
 build:
   number: 0
