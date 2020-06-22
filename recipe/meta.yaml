@@ -1,4 +1,4 @@
-{% set version = "0.14.0" %}
+{% set version = "0.15.0" %}
 
 package:
   name: check
@@ -6,11 +6,11 @@ package:
 
 source:
   url: https://github.com/libcheck/check/releases/download/{{ version }}/check-{{ version }}.tar.gz
-  sha256: bd0f0ca1be65b70238b32f8e9fe5d36dc2fbf7a759b7edf28e75323a7d74f30b
+  sha256: aea2e3c68fa6e1e92378e744b1c0db350ccda4b6bd0d19530d0ae185b3d1ac60
 
 build:
   number: 0
-  skip: True  # [win]
+  skip: true  # [win]
 
 requirements:
   build:
@@ -29,7 +29,7 @@ about:
   home: http://libcheck.github.io/check/
   license: LGPL-2.1
   license_file: COPYING.LESSER
-  summary: 'Unit testing framework for C'
+  summary: Unit testing framework for C
 
 extra:
   recipe-maintainers:
