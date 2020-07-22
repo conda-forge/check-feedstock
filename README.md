@@ -5,7 +5,7 @@ Home: http://libcheck.github.io/check/
 
 Package license: LGPL-2.1
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Unit testing framework for C
 
