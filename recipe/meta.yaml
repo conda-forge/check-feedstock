@@ -7,14 +7,21 @@ package:
 source:
   url: https://github.com/libcheck/check/releases/download/{{ version }}/check-{{ version }}.tar.gz
   sha256: a8de4e0bacfb4d76dd1c618ded263523b53b85d92a146d8835eb1a52932fa20a
+  patches:
+    # Has been merged tomaster, only affects the precision of the tests
+    # Necessary to move ppc64le forward
+    # https://github.com/libcheck/check/issues/333
+    # https://github.com/libcheck/check/pull/322
+    - 322-ppc64le_test_tolerance.patch
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
 
 requirements:
   build:
     - automake
+    - make
     - libtool
     - pkg-config
     - {{ compiler('c') }}

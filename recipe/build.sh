@@ -11,7 +11,7 @@ fi
 ./configure --prefix=${PREFIX}
 
 make
-make check
+make check || (cat tests/test-suite.log && exit 1)
 make install
 
 # We can remove this when we start using the new conda-build.
